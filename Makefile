@@ -7,8 +7,10 @@ all: ./docs/propuesta_anteproyecto.pdf
 	pdflatex -output-directory="./docs/" ./docs/propuesta_anteproyecto.tex
 	
 clean:
-	rm ./docs/*.aux
-	rm ./docs/*.log
+	rm ./docs/*.pdf
 
 clean-all: clean
-	rm ./docs/*.pdf
+	rm ./docs/*.aux
+	rm ./docs/*.bbl
+	rm ./docs/*.blg
+	rm ./docs/*.log
