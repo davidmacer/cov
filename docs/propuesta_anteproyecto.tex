@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+% -------------------------------------------------------------------
+% Pacotes básicos
+\usepackage[spanish,mexico]{babel}										% Idioma a ser usado
+\usepackage{hyperref}
+                                                                % Trocar "english" para "brazil" para artigos escritos em língua portuguesa 
+\usepackage[utf8]{inputenc}										% Escrita de caracteres acentuados e cedilhas - 1
+\usepackage[T1]{fontenc}										% Escrita de caracteres acentuados + outros detalhes técnicos fundamentais
+% -------------------------------------------------------------------
+% Pacotes para inserção de figuras e subfiguras
+\usepackage{subfig,epsfig,tikz,float,placeins}		            % Packages de figuras. 
+\graphicspath{ {./imgs/} }
+% -------------------------------------------------------------------
+% Pacotes para inserção de tabelas
+\usepackage{booktabs,multicol,multirow,tabularx,array}          % Packages para tabela
+\usepackage[round,sort]{natbib}
+% -------------------------------------------------------------------
+% Definição de comprimentos
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\textwidth 13.5cm
+\textheight 19.5cm
+\columnsep .5cm
+% -------------------------------------------------------------------
+% Título do seu artigo 
+\title{\renewcommand{\baselinestretch}{1.17}\bf%
+Análisis de la Dinámica de la Calidad del Aire en la Zona Metropolitana del Valle de México \ 
+mediante Analítica Visual \\
+
+\begin{large} 
+    Propuesta de anteproyecto para el \ 
+    Doctorado en Ciencias de Información Geoespacial
+\end{large}
+}
+% -------------------------------------------------------------------
+% Autorias
+\author{%
+Jorge David Martínez Cervantes\textsuperscript{1} \\ 
+\\ 
+\normalsize email: \href{mailto:jdmartinez@centrogeo.edu.mx}{jdmartinez@centrogeo.edu.mx} \\
+\\ 
+
+Asesor: Dr. Rodrigo Tapia McClung
+}
+
+\date{\vspace{-5ex}}
+%\date{}  % Toggle commenting to test
+% -------------------------------------------------------------------
+
+%Início do documento
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    {\footnotesize 
+    \textsuperscript{1}Centro de Investigación en Ciencias de Información Geoespacial, A.C. \\
+    }
+\end{center}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+	
+    \textbf{Palabras clave:} visual analytics, spatio-temporal visualization, time series visualization, multi-dimensional visualization, air pollution \\
+
+\end{abstract}
+%----
+
+% -------------------------------------------------------------------
+\newpage
+
+\section{Introducción}\label{sec:introduccion}
+
+% \input{./docs/introduccion}
+
+\section{Antecedentes y estado del arte}\label{sec:antecedentes}
+
+% \input{./docs/antecedentes}
+
+\section{Justificación}\label{sec:justificacion}
+
+% \input{./docs/justificacion}
+
+\section{Marco Teórico}\label{sec:marco_teorico}
+
+\input{./docs/marco_teorico}
+
+\section{Planteamiento del Problema}\label{sec:planteamiento}
+
+% \input{./docs/planteamiento_problema}
+
+\section{Hipótesis o preguntas de investigación}\label{sec:hipotesis}
+
+% \input{./docs/hipotesis}
+
+\section{Objetivo General}\label{sec:objetivos}
+
+% \input{./docs/objetivo_general}
+
+\section{Diseño Metodológico}\label{metodologia}
+
+% \input{./docs/diseno_metodologico}
+
+\section{Resultados y Discusión}\label{resultados_discusion}
+
+% \input{resultados_discusion}
+
+\section{Conclusión}\label{conclusion}
+
+% \input{conclusion}
+
+\bibliographystyle{abbrvnat}
+\bibliography{./docs/biblio}
+
+\end{document}
