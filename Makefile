@@ -1,4 +1,4 @@
-all: ./docs/propuesta_anteproyecto.pdf
+all: ./docs/propuesta_anteproyecto.pdf ./docs/Revision_Notes.pdf
 
 ./docs/propuesta_anteproyecto.pdf: ./docs/propuesta_anteproyecto.tex
 	pdflatex -output-directory="./docs/" ./docs/propuesta_anteproyecto.tex
@@ -6,6 +6,8 @@ all: ./docs/propuesta_anteproyecto.pdf
 	pdflatex -output-directory="./docs/" ./docs/propuesta_anteproyecto.tex
 	pdflatex -output-directory="./docs/" ./docs/propuesta_anteproyecto.tex
 	
+./docs/Revision_Notes.pdf: ./docs/Revision_Notes.md
+	pandoc ./docs/Revision_Notes.md -o ./docs/Revision_Notes.pdf
 clean:
 	rm ./docs/*.pdf
 
@@ -14,3 +16,5 @@ clean-all: clean
 	rm ./docs/*.bbl
 	rm ./docs/*.blg
 	rm ./docs/*.log
+	rm ./docs/*.out
+	rm ./docs/*.toc
